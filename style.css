@@ -8,30 +8,36 @@ body, html {
     height: 100%;
     width: 100%;
 }
+
 body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
 
 }
+
 @font-face {
 
     font-family: 'Montserrat-Bold';
     src: url(txt/Montserrat-Bold.ttf);
 
 }
+
 @font-face {
     font-family: 'Kollektif';
     src: url(txt/Kollektif-Bold.ttf);
 }
+
 @font-face {
     font-family: 'Kollektif_df';
     src: url(txt/Kollektif.ttf);
 }
+
 @font-face {
     font-family: 'Inter_L';
     src: url(txt/Inter-Light.otf);
 }
+
 header {
     background-color: #2D2D2D;
     border-bottom-left-radius: 45px;
@@ -76,9 +82,11 @@ header {
     display: flex;
     gap: 12px;
 }
+
 .tg {
     margin-right: 12px;
 }
+
 .wts, .tg {
     width: 40px;
     height: 40px;
@@ -94,16 +102,19 @@ header {
 
 
 }
+
 .logo {
     margin: 0 315px 0 0;
     position: relative;
 }
+
 .logo img {
     width: 251px;
     height: 70px;
     margin: 6px 0 6px 70px;
 
 }
+
 .menu a {
 
     text-decoration: none;
@@ -112,7 +123,7 @@ header {
     display: flex;
     align-items: center;
     text-align: center;
-    font-family: Inter_L,sans-serif;
+    font-family: Inter_L, sans-serif;
     justify-content: center;
     font-weight: lighter;
 
@@ -161,6 +172,7 @@ header {
     width: 72px;
     height: 72px;
 }
+
 .pokup {
     font-size: 32px;
     font-family: Inter, sans-serif;
@@ -181,60 +193,53 @@ header {
 
 }
 
-/* HOVER состояние - серее */
 .menu a:hover {
-    color: #a0a0a0; /* темнее серый */
+    color: #a0a0a0;
 
 }
 
-/* ACTIVE состояние - красный (при нажатии) */
 .menu a:active {
-    color: #CD3400; /* красный */
+    color: #CD3400;
 
 
 }
 
-/* DISABLED состояние - темный серый (отключенный) */
 .menu a.disabled {
-    color: #666666; /* темный серый */
+    color: #666666;
     cursor: not-allowed;
     opacity: 0.7;
     pointer-events: none;
 }
 
-/* FOCUS для доступности (невидимый пока не табнули) */
 .menu a:focus-visible {
     outline: 2px solid #ff6a00;
     outline-offset: 3px;
     border-radius: 4px;
 }
 
-/* Если нужно состояние текущей страницы */
+
 .menu a.active {
-    color: #ff6a00; /* оранжевый */
+    color: #ff6a00;
     font-weight: 500;
 }
-/* HOVER состояние - желтоватый */
+
 .main_btn:hover a {
     background: linear-gradient(180deg, #FF8C00 0%, #FF7700 100%);
     border-radius: 20px;
 
 }
 
-/* ACTIVE состояние - красная (при нажатии) */
 .main_btn:active a {
     background: #CD3400;
 
 }
 
-/* Если добавить класс clicked для состояния после клика */
 .main_btn.clicked a {
     background: linear-gradient(180deg, #808080 0%, #666666 100%);
     color: #ffffff;
     cursor: default;
 }
 
-/* DISABLED состояние - серая (отключенная) */
 .main_btn.disabled a {
     background: linear-gradient(180deg, #CCCCCC 0%, #AAAAAA 100%);
     color: #888888;
@@ -244,7 +249,6 @@ header {
     pointer-events: none;
 }
 
-/* FOCUS для доступности */
 .main_btn a:focus {
     outline: 2px solid rgba(255, 106, 0, 0.5);
     outline-offset: 3px;
@@ -257,6 +261,7 @@ header {
 .sell {
     color: #2D2D2D;
 }
+
 .main_btn a {
     display: flex;
     padding: 21px 59px;
@@ -265,9 +270,6 @@ header {
     justify-content: center;
     font-weight: 600;
     font-family: Kollektif_df, sans-serif;
-
-
-
 
 
 }
@@ -294,7 +296,6 @@ header {
     object-fit: cover;
 
 }
-
 
 
 .star1 img {
@@ -331,7 +332,7 @@ header {
 }
 
 .text_bottom {
-    font-family: Montserrat-Bold,sans-serif;
+    font-family: Montserrat-Bold, sans-serif;
     font-weight: bold;
     align-self: center;
     line-height: 1;
@@ -340,9 +341,48 @@ header {
     font-size: 48px;
 }
 
+.bottom_list a:hover {
+    color: #ff6a00; /* оранжевый */
+    background-color: #fff5e6;
+    border-color: #ffd9b3;
+}
 
 
-.iph  {
+.bottom_list a:active {
+    color: #ff4444; /* красный */
+    background-color: #ffffff;
+    border-color: #ffb3b3;
+}
+
+.bottom_list a.disabled {
+    background-color: #e0e0e0;
+    color: #999999;
+    cursor: not-allowed;
+    opacity: 0.6;
+    pointer-events: none;
+    border-color: #cccccc;
+}
+
+.bottom_list a.disabled:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.bottom_list a.active {
+    color: #ff6a00;
+    background-color: #fff5e6;
+    border-color: #ff6a00;
+    font-weight: 500;
+}
+
+.bottom_list a:focus-visible {
+    outline: 2px solid #ff6a00;
+    outline-offset: 2px;
+    border-radius: 25px;
+}
+
+
+.iph {
     width: 364px;
     position: absolute;
     margin: -64px 0 0 477px;
@@ -355,8 +395,6 @@ header {
     position: absolute;
     margin: 43px 0 120px 476px;
 }
-
-
 
 
 .container4 {
@@ -421,6 +459,7 @@ p {
 ._idst {
     background-image: url("img/Star 4.png");
 }
+
 .staar1 {
     width: 44px;
     height: 44px;
@@ -429,6 +468,7 @@ p {
     background-position: bottom right;
     background-repeat: no-repeat;
 }
+
 .staar2 {
     width: 44px;
     height: 44px;
@@ -467,7 +507,7 @@ footer {
     border-top-right-radius: 35px;
 }
 
-.text_ft{
+.text_ft {
     color: white;
     font-size: 32px;
     font-family: Inter, sans-serif;
@@ -489,7 +529,6 @@ footer {
     justify-content: center;
 
 
-
 }
 
 .link_ft {
@@ -501,6 +540,7 @@ footer {
     justify-content: center;
     gap: 2px;
 }
+
 .link_ft a::after {
     content: "|";
     margin-left: 5px;
@@ -513,18 +553,18 @@ footer {
     content: none;
 }
 
-/* HOVER состояние - оранжевый */
+
 .link_ft a:hover {
-    color: #ff6a00; /* оранжевый */
+    color: #ff6a00;
 }
 
 .link_ft a:hover::after {
     color: #ff6a00;
 }
 
-/* ACTIVE состояние - красный (при нажатии) */
+
 .link_ft a:active {
-    color: #ff4444; /* красный */
+    color: #ff4444;
     transition-duration: 0.1s;
 }
 
@@ -532,7 +572,7 @@ footer {
     color: #ff4444;
 }
 
-/* DISABLED состояние - темный серый */
+
 .link_ft a.disabled {
     color: #666666;
     cursor: not-allowed;
@@ -544,14 +584,14 @@ footer {
     color: #666666;
 }
 
-/* FOCUS для доступности */
+
 .link_ft a:focus-visible {
     outline: 2px solid #ff6a00;
     outline-offset: 2px;
     border-radius: 3px;
 }
 
-.link_ft a{
+.link_ft a {
     color: gray;
     text-decoration: none;
     font-size: 20px;
@@ -566,19 +606,21 @@ footer {
         padding: 0;
         overflow-x: hidden;
     }
+
     header {
         margin: 0 auto;
         background-color: #3e3939;
 
 
     }
+
     .logo {
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         margin: 0;
-padding: 0;
+        padding: 0;
     }
 
     .logo img {
@@ -587,15 +629,16 @@ padding: 0;
         margin: 0;
     }
 
-    .wts  {
+    .wts {
         width: 25px;
         height: 25px;
     }
 
-    .tg  {
+    .tg {
         width: 25px;
         height: 25px;
     }
+
     .menu {
         display: flex;
         justify-content: center;
@@ -610,6 +653,7 @@ padding: 0;
     .menu a {
         font-size: 16px;
     }
+
     .container {
         width: 100%;
         display: flex;
@@ -623,6 +667,7 @@ padding: 0;
         font-size: 14px;
         margin: 22px 30px 22px 10px;
     }
+
     .fullstr {
         max-width: 780px;
         margin-left: 25px;
@@ -634,7 +679,7 @@ padding: 0;
     }
 
     .main_txt {
-font-size: 36px;
+        font-size: 36px;
         z-index: 1000000;
     }
 
@@ -662,14 +707,14 @@ font-size: 36px;
         z-index: 1;
     }
 
-.bottom_list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    .bottom_list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
 
-}
+    }
 
 
     .bottom_list a {
@@ -677,16 +722,18 @@ font-size: 36px;
         font-size: 20px;
         height: 60px;
     }
-.title {
-    font-size: 28px;
 
-}
+    .title {
+        font-size: 28px;
+
+    }
 
 
-p {
-    font-size: 20px;
-    max-width: 50%;
-}
+    p {
+        font-size: 20px;
+        max-width: 50%;
+    }
+
     .container4 {
         display: flex;
         flex-direction: column;
@@ -706,7 +753,7 @@ p {
         margin: 60px 0 200px 310px;
     }
 
-    .staar3{
+    .staar3 {
         margin: 60px 0 200px 310px;
     }
 
@@ -732,7 +779,7 @@ p {
         font-size: 18px;
     }
 
-    /* Скрываем все разделители на мобильных */
+
     .link_ft a::after {
         content: none;
         display: none;
@@ -744,10 +791,11 @@ p {
 
     }
 
-    /* Добавляем разделитель в виде точки или просто отступ */
+
     .link_ft a:not(:last-child)::after {
         content: none;
     }
+
     .link_ft {
         display: flex;
         align-items: center;
@@ -755,18 +803,10 @@ p {
         flex-direction: column;
         gap: 20px;
     }
+
     .link_ft a {
         font-size: 14px;
     }
-
-
-
-
-
-
-
-
-
 
 
 }
