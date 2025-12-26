@@ -14,9 +14,26 @@ body {
     overflow-x: hidden;
 
 }
+@font-face {
 
+    font-family: 'Montserrat-Bold';
+    src: url(txt/Montserrat-Bold.ttf);
+
+}
+@font-face {
+    font-family: 'Kollektif';
+    src: url(txt/Kollektif-Bold.ttf);
+}
+@font-face {
+    font-family: 'Kollektif_df';
+    src: url(txt/Kollektif.ttf);
+}
+@font-face {
+    font-family: 'Inter_L';
+    src: url(txt/Inter-Light.otf);
+}
 header {
-    background-color: #3e3939;
+    background-color: #2D2D2D;
     border-bottom-left-radius: 45px;
     border-bottom-right-radius: 45px;
     text-align: center;
@@ -48,10 +65,11 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-family: Arial, sans-serif;
-    font-size: 27px;
+    font-family: Inter, sans-serif;
+    font-size: 32px;
     margin: 22px 30px 22px 0;
     color: white;
+
 }
 
 .kont {
@@ -68,18 +86,23 @@ header {
 }
 
 .menu {
+    margin-right: 228px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 60px;
+
+
 }
 .logo {
-
+    margin: 0 315px 0 0;
+    position: relative;
 }
 .logo img {
     width: 251px;
     height: 70px;
     margin: 6px 0 6px 70px;
+
 }
 .menu a {
 
@@ -89,7 +112,9 @@ header {
     display: flex;
     align-items: center;
     text-align: center;
+    font-family: Inter_L,sans-serif;
     justify-content: center;
+    font-weight: lighter;
 
 }
 
@@ -106,8 +131,9 @@ header {
 }
 
 .main_txt {
-    font-family: "Arial Black";
-    font-size: 62px;
+    font-family: "Montserrat-Bold", sans-serif;
+    font-weight: bold;
+    font-size: 80px;
     line-height: 1;
 
 
@@ -119,7 +145,7 @@ header {
 }
 
 .bis {
-    color: black;
+    color: #2D2D2D;
 
 }
 
@@ -136,27 +162,40 @@ header {
     height: 72px;
 }
 .pokup {
-    font-size: 31px;
+    font-size: 32px;
+    font-family: Inter, sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.25;
+
 }
 
 .main_btn {
     display: inline-block;
     background-color: #ff6a00;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 20px;
     font-size: 24px;
     cursor: pointer;
     width: 801px;
 
-}
 
+}
+.sell {
+    color: #2D2D2D;
+}
 .main_btn a {
-    display: block;
-    padding: 20px 60px;
+    display: flex;
+    padding: 21px 59px;
     text-decoration: none;
-    color: white;
-    font-family: Calibri, Arial, sans-serif;
-    font-weight: bold;
+    color: #ffffff;
+    justify-content: center;
+    font-weight: 600;
+    font-family: Kollektif_df, sans-serif;
+
+
+
+
+
 }
 
 .photo_main {
@@ -199,17 +238,18 @@ header {
 }
 
 .bottom_list a {
-    font-family: Calibri;
+
     text-decoration: none;
     background-color: #ffffff;
-    color: #494141;
+    color: #808080;
     width: 280px;
     height: 88px;
     padding: 32px 14px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    font-size: 19px;
+    font-size: 20px;
     display: flex;
+    font-family: Inter, sans-serif;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -217,58 +257,21 @@ header {
 }
 
 .text_bottom {
-    font-family: "Arial Black";
+    font-family: Montserrat-Bold,sans-serif;
     font-weight: bold;
     align-self: center;
     line-height: 1;
     text-align: center;
-    margin: 120px 0 40px 0;
-    font-size: 54px;
-}
-.cont {
-    column-count: 2;
-    display: block;
-
-}
-.box {
-
-    width: 880px;
-    height: 349px;
-    background-color: #F6F6F6;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    border-radius: 32px;
-
+    margin: 129px 0 40px 0;
+    font-size: 48px;
 }
 
-.str1 {
-    font-size: 36px;
-    font-family: Calibri;
-    gap: 20px;
-    padding: 60px 30px 0 40px;
-    align-items: center;
 
-    display: flex;
-
-}
-
-.staar1 {
-    width: 44px;
-    height: 44px;
-    margin: 0 0 0 30px;
-}
-.mini1 {
-    font-size: 24px;
-    font-family: Calibri;
-    padding: 0 0 109px 40px;
-    color: gray;
-}
 
 .iph  {
     width: 364px;
     position: absolute;
-    margin-left: 516px;
+    margin: -64px 0 0 477px;
     height: 349px;
 }
 
@@ -276,83 +279,100 @@ header {
     width: 364px;
     height: 245px;
     position: absolute;
-    margin: 104px 0 0 516px;
+    margin: 43px 0 120px 476px;
 }
 
-.box1 {
-    width: 880px;
-    height: 349px;
-    background-color: #F6F6F6;
+
+
+.cont {
     display: flex;
-    flex-direction: column;
-gap: 15px;
-    border-radius: 32px;
-    margin: 20px 0 0 0;
-}
-
-.str2 {
-    font-size: 36px;
-    font-family: Calibri;
-
-    padding: 60px 30px 0 40px;
-    line-height: 1.2;
-
-
-    display: flex;
-}
-
-.box2 {
-    width: 880px;
-    height: 349px;
-    background-color: #F6F6F6;
-    display: flex;
-    flex-direction: column;
     gap: 20px;
-    border-radius: 32px;
-    margin: 20px 0 0 0;
-
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.box3 {
-    width: 880px;
-    height: 349px;
-    background-color: #F6F6F6;
+.column {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    border-radius: 32px;
-    margin: 20px 0 0 0;
-
+    gap: 30px;
 }
+
+.box, .box1, .box2, .box3 {
+    position: relative;
+    max-width: 100%;
+    width: 880px;
+    height: 349px;
+    padding: 60px 446px 0 40px;
+    border-radius: 30px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.str1, .str2 {
+    font-size: 32px;
+    font-family: Inter, sans-serif;
+    margin-bottom: 20px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mini1 {
+    font-size: 24px;
+
+    color: #666;
+    flex-grow: 1;
+    font-family: Inter, sans-serif;
+white-space: nowrap;
+    line-height: 1.25;
+}
+
+.staar1 {
+    width: 44px;
+    height: 44px;
+    margin-left: 30px;
+}
+
+
 
 footer {
-    background-color: black;
+    background-color: #2D2D2D;
     height: 312px;
+    margin-top: 300px;
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
 }
 
 .text_ft{
     color: white;
-    font-size: 26px;
-    font-family: Calibri;
+    font-size: 32px;
+    font-family: Inter, sans-serif;
     align-items: center;
     text-align: center;
     padding: 80px 254px 20px 254px;
+
 }
 
 .text_ft_min {
     color: white;
-    font-size: 19px;
-    font-family: Calibri;
+    font-size: 24px;
+    font-family: Inter, sans-serif;
     align-items: center;
     text-align: center;
     padding: 0 622px 40px 622px;
 
+
 }
 
 .link_ft {
+    font-family: Inter, sans-serif;
     color: gray;
+    font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
