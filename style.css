@@ -284,65 +284,110 @@ header {
 
 
 
-.cont {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    max-width: 1200px;
+
+.container4 {
+    max-width: 1780px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.column {
+.card {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-}
-
-.box, .box1, .box2, .box3 {
-    position: relative;
-    max-width: 100%;
-    width: 880px;
-    height: 349px;
-    padding: 60px 446px 0 40px;
+    padding: 60px 40px;
+    background: #F6F6F6;
+    width: calc(50% - 20px / 2);
     border-radius: 30px;
-    background: #ffffff;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    min-height: 200px;
-    display: flex;
-    flex-direction: column;
+    box-sizing: border-box;
+    row-gap: 20px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: auto;
+    min-height: 349px;
 }
 
-.str1, .str2 {
+.title {
     font-size: 32px;
+    line-height: normal;
     font-family: Inter, sans-serif;
-    margin-bottom: 20px;
-    color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    color: #2D2D2D;
+    font-weight: lighter;
 }
 
-.mini1 {
+p {
     font-size: 24px;
-
-    color: #666;
-    flex-grow: 1;
+    line-height: normal;
     font-family: Inter, sans-serif;
-white-space: nowrap;
-    line-height: 1.25;
+    color: #808080;
 }
 
+.title, p {
+    max-width: 58.25%;
+}
+
+._id1 {
+    background-image: url('https://raw.githubusercontent.com/Seforq/site_all/refs/heads/main/img/iphone.png'), url('https://raw.githubusercontent.com/Seforq/site_all/refs/heads/main/img/Background.png');
+}
+
+._id2 {
+    background-image: url('https://raw.githubusercontent.com/Seforq/site_all/refs/heads/main/img/man.png'), url('https://raw.githubusercontent.com/Seforq/site_all/refs/heads/main/img/Background.png');
+}
+
+._id3 {
+    background-image: url('https://raw.githubusercontent.com/Seforq/site_all/refs/heads/main/img/telega.png'), url('https://raw.githubusercontent.com/Seforq/site_all/refs/heads/main/img/Background.png');
+}
+
+._id4 {
+    background-image: url('https://raw.githubusercontent.com/Seforq/site_all/refs/heads/main/img/pkk.png'), url('https://raw.githubusercontent.com/Seforq/site_all/refs/heads/main/img/Background.png');
+}
+
+._idst {
+    background-image: url("img/Star 4.png");
+}
 .staar1 {
     width: 44px;
     height: 44px;
-    margin-left: 30px;
+    margin-left: 350px;
+    position: absolute;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+.staar2 {
+    width: 44px;
+    height: 44px;
+    margin-left: 348px;
+    position: absolute;
+    background-position: bottom right;
+    background-repeat: no-repeat;
 }
 
+.staar3 {
+    width: 44px;
+    height: 44px;
+    margin-left: 296px;
+    position: absolute;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+.staar4 {
+    width: 44px;
+    height: 44px;
+    margin-left: 373px;
+    position: absolute;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
 
 
 footer {
     background-color: #2D2D2D;
-    height: 312px;
+    max-height: 312px;
+    height: 100%;
+    width: 1920px;
     margin-top: 300px;
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
@@ -380,12 +425,10 @@ footer {
 }
 
 .link_ft a{
-
-
-
     color: gray;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
+    font-family: Inter, sans-serif;
 
 }
 @media screen and (max-width: 768px) {
